@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/box_selection/box_selection.gd" type="Script" id=1]
+[ext_resource path="res://selectable_sprite.tscn" type="PackedScene" id=2]
+
+[node name="Main" type="Node2D"]
+
+[node name="SelectableSprite1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 243, 179 )
+
+[node name="SelectableSprite2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 709, 190 )
+
+[node name="SelectableSprite3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 346, 331 )
+
+[node name="SelectableSprite4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 563, 334 )
+
+[node name="SelectableSprite5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 205, 483 )
+
+[node name="SelectableSprite6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 277, 483 )
+
+[node name="SelectableSprite7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 802, 425 )
+
+[node name="BoxSelection" type="Node2D" parent="."]
+script = ExtResource( 1 )

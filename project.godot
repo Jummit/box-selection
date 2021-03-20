@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "BoxSelection",
+"language": "GDScript",
+"path": "res://addons/box_selection/box_selection.gd"
+} ]
+_global_script_class_icons={
+"BoxSelection": "res://addons/box_selection/box_selection_icon.svg"
+}
+
+[application]
+
+config/name="Box Selection Plugin Demo"
+config/description="Demo for the Box Selection Plugin."
+run/main_scene="res://main.tscn"
+config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/box_selection/plugin.cfg" )
+
+[rendering]
+
+environment/default_clear_color=Color( 0.196078, 0.196078, 0.2, 1 )
+environment/default_environment="res://default_env.tres"
